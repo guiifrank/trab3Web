@@ -4,7 +4,7 @@ const API = "https://691cf7eed58e64bf0d349106.mockapi.io/api/v1/user_manager/use
 async function loadUsers() {
     const res = await fetch(API);
     const users = await res.json();
-    
+
     const list = document.getElementById("userList");
     list.innerHTML = "";
 
@@ -32,7 +32,7 @@ async function loadUsers() {
 // Salvar (Adicionar ou Editar)
 async function saveUser() {
     const id = document.getElementById("userId").value;
-    
+
     const userData = {
         name: document.getElementById("userName").value,
         age: document.getElementById("userAge").value,
