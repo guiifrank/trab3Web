@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+    padding: 10px;
+    margin: 6px 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button.delete {
+    background: #e74c3c;
+}
+
+button.edit {
+    background: #f1c40f;
+    color: black;
+}
+
+/* Estilo dos cards */
+.user-list {
+    margin-top: 15px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.card strong {
+    font-size: 18px;
+}
+
+.card small {
+    display: block;
+    color: #555;
+    margin-top: 4px;
+}
+
+.card-buttons {
+    margin-top: 10px;
+}
+
+.card-buttons button {
+    width: 48%;
+}
