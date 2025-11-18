@@ -41,8 +41,8 @@ async function saveUser() {
         cell_number: document.getElementById("userCell").value
     };
 
-    if (!userData.name || !userData.email) {
-        alert("Nome e Email são obrigatórios!");
+    if (!userData.name || !userData.age || !userData.email || !userData.address || !userData.cell_number) {
+        alert("Favor preencha todos os dados.");
         return;
     }
 
@@ -64,6 +64,8 @@ async function saveUser() {
 
     clearForm();
     loadUsers();
+
+    alert("Usuário cadastrado com sucesso.");
 }
 
 // Preencher campos para editar
